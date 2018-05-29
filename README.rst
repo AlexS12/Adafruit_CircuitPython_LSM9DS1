@@ -14,12 +14,17 @@ Introduction
     :target: https://travis-ci.org/adafruit/Adafruit_CircuitPython_LSM9DS1
     :alt: Build Status
 
+Dependency on circuit python has been removed when adafruit_lsm9ds1_smbus2.py
+    is used so it can be run in a Raspberry Pi. Communications rely on
+        smbus2 library instead.
+
 CircuitPython module for the LSM9DS1 accelerometer, magnetometer, gyroscope.
 
 Dependencies
 =============
 This driver depends on:
 
+adafruit_lsm9ds1.py:
 * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
 * `Bus Device <https://github.com/adafruit/Adafruit_CircuitPython_BusDevice>`_
 
@@ -27,10 +32,14 @@ Please ensure all dependencies are available on the CircuitPython filesystem.
 This is easily achieved by downloading
 `the Adafruit library and driver bundle <https://github.com/adafruit/Adafruit_CircuitPython_Bundle>`_.
 
+adafruit_lsm9ds1_smbus2.py:
+* `smbus2`_
+
 Usage Example
 =============
 
 See examples/lsm9ds1_simpletest.py for a demo of the usage.
+See examples/lsm9ds1_smbus2_simpletest.py for a demo of the usage.
 
 Contributing
 ============
